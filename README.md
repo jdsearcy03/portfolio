@@ -1,5 +1,5 @@
-# Jacob Searcy Portfolio
+# Jacob Searcy's Portfolio
 
-My portfolio.
+Originally forked rajshekhar26's Cleanfolio. Updated to a new version built by me.
 
-Built during and inspired by freeCodeCamp portfolio project
+Built during and inspired by freeCodeCamp's portfolio project for the Responsive Web Development Certification
