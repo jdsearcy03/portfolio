@@ -1,13 +1,5 @@
-# Cleanfolio Minimal
+# Jacob Searcy Portfolio
 
-A clean and simple portfolio template built with plain HTML, CSS and JavaScript.
+My portfolio.
 
-## Preview
-
-[![imgur](https://i.imgur.com/5z7cvMz.gif)](https://rajshekhar26.github.io/cleanfolio-minimal)
-
-[See Live](https://rajshekhar26.github.io/cleanfolio-minimal)
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+Built during and inspired by freeCodeCamp portfolio project

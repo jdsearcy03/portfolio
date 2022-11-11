@@ -1,201 +1,80 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
     <title>Jacob Searcy</title>
   </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-      </h3>
-
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </header>
-
-    <main>
-      <!-- About -->
-      <div class="about center">
-        <h1>Hi, I'm <span class="about__name">Jacob Searcy,</span></h1>
-        <h2 class="about__role">A PowerShell Developer.</h2>
-        <p class="about__desc">
-          I'm passionate about coding and excited to follow any opportunity where I can learn and grow.
-        </p>
-
-        <div class="about__contact center">
-          <a href="https://docs.google.com/document/d/e/2PACX-1vRckyzP4skd4h11D7xGeGC9Nrg5xztOemGBeYcTyxYhz-A2OQPdT92tnY0VXxz5KbJEeXcbnn2m61DG/pub">
-            <span class="btn btn--outline">Resume</span>
-          </a>
-
-          <a
-            href="https://github.com/jdsearcy03"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-
-          <a
-            href="https://linkedin.com/in/jacob-searcy"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
-
-        <div class="projects__grid">
-          <div class="project">
-            <h3>ServiceNow Hardware Updater</h3>
-            <p class="project__description">
-              A tool that streamlines updating ServiceNow Hardware Assets at device EOL. Given only a Computer Name, the Serial Number of the old device, and the Serial Number of the new device, the old record is retired and the new record is updated to reflect the old record (While also allowing for edits to be made).
-            </p>
-            <p class="project__description">
-              <a
-                href="https://github.com/jdsearcy03/ServiceNow-Hardware-Updater"
-                aria-label="source code"
-                class="link link--icon"
-              >
-                <i aria-hidden="true" class="fab fa-github"></i>
-              </a>
-              <a
-                href="https://jdsearcy03.github.io/ServiceNow-Hardware-Updater/"
-                aria-label="live preview"
-                class="link link--icon"
-              >
-                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-              </a>
-            </p>
-          </div>
-
-          <div class="project">
-            <h3>Application Installer Interface</h3>
-            <p class="project__description">
-              An interface that enables technicians to install applications hosted through Microsoft SCCM to remote machines quickly, easily, and/or in bulk. The responsive menus allow the tech to enter a list of Computer Names, search available apps, push an install or uninstall, and check the installation status.
-            </p>
-            <p class="project__description">
-              <a
-                href="https://github.com/jdsearcy03/Application-Installer"
-                aria-label="source code"
-                class="link link--icon"
-              >
-                <i aria-hidden="true" class="fab fa-github"></i>
-              </a>
-              <a
-                href="https://jdsearcy03.github.io/Application-Installer/"
-                aria-label="live preview"
-                class="link link--icon"
-              >
-                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-              </a>
-            </p>
-          </div>
-
-          <div class="project">
-            <h3>Network Printer Automation</h3>
-            <p class="project__description">
-              A tool that automates connecting end-users' network-connected printers after device upgrade. It generates a list of all connected printers for all User accounts on the old device. It formats that list into a .vbs print script which is then saved to the startup folder of the new device so that all printers will be automatically added at login.
-            </p>
-            <p class="project__description">
-              <a
-                href="https://github.com/jdsearcy03/Connect-Network-Printers"
-                aria-label="source code"
-                class="link link--icon"
-              >
-                <i aria-hidden="true" class="fab fa-github"></i>
-              </a>
-              <a
-                href="https://jdsearcy03.github.io/Connect-Network-Printers/"
-                aria-label="live preview"
-                class="link link--icon"
-              >
-                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">PowerShell</li>
-          <li class="skills__list-item btn btn--plain">REST API</li>
-          <li class="skills__list-item btn btn--plain">GraphQL</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">ServiceNow</li>
-          <li class="skills__list-item btn btn--plain">Monday.com</li>
-          <li class="skills__list-item btn btn--plain">SCCM</li>
-          <li class="skills__list-item btn btn--plain">Active Directory</li>
-          <li class="skills__list-item btn btn--plain">DHCP</li>
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">Google Cloud</li>
-        </ul>
-      </section>
-
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:jdsearcy03@gmail.com">
-          <span class="btn btn--outline">Email me</span>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar" class="nav">
+      <p>>_</p>
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section"><i class="fas fa-house"></i></a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Welcome Section -->
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hello! I'm Jacob Searcy</h1>
+      <p>A Software Developer</p>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">My PowerShell Projects</h2>
+      <div class="projects-grid">
+        <a href="https://jdsearcy03.github.io/ServiceNow-Hardware-Updater/" target="_blank" class="project project-tile">
+          <p class="project-title">
+            <span class="code">>_</span>
+            ServiceNow Hardware Updater
+            <span class="code">_</span>
+          </p>
+          <img class="project-image" src="https://github.com/jdsearcy03/ServiceNow-Hardware-Updater/blob/main/ReadMe%20Files/Assigned.gif?raw=%22true%22" alt="A tool that streamlines updating ServiceNow Hardware Assets at device EOL. Given only a Computer Name, the Serial Number of the old device, and the Serial Number of the new device, the old record is retired and the new record is updated to reflect the old record (While also allowing for edits to be made).">
         </a>
-      </section>
-    </main>
-
-    <footer class="footer">
-    </footer>
-
-    <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
-    </div>
-
-    <script src="./script.js"></script>
+        <a href="https://jdsearcy03.github.io/Application-Installer/" target="_blank" class="project project-tile">
+          <p class="project-title">
+            <span class="code">>_</span>
+            Application Installer Interface
+            <span class="code">_</span>
+          </p>
+          <img class="project-image" src="https://github.com/jdsearcy03/Application-Installer/blob/main/ReadMe%20Files/Application.gif?raw=%22true%22" alt="An interface that enables technicians to install applications hosted through Microsoft SCCM to remote machines quickly, easily, and/or in bulk. The responsive menus allow the tech to enter a list of Computer Names, search available apps, push an install or uninstall, and check the installation status.">
+        </a>
+        <a href="https://jdsearcy03.github.io/Connect-Network-Printers/" target="_blank" class="project project-tile">
+          <p class="project-title">
+            <span class="code">>_</span>
+            Network Printer Automation
+            <span class="code">_</span>
+          </p>
+          <img class="project-image" src="https://github.com/jdsearcy03/Connect-Network-Printers/blob/main/ReadMe%20Files/Computer.gif?raw=%22true%22" alt="A tool that automates connecting end-users' network-connected printers after device upgrade. It generates a list of all connected printers for all User accounts on the old device. It formats that list into a .vbs print script which is then saved to the startup folder of the new device so that all printers will be automatically added at login.">
+        </a>
+      </div>
+      <a href="/web-dev.html" class="btn btn-show-all">Web Dev Projects</a>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Contact Me</h2>
+        <p>I'm passionate about coding and excited to follow any opportunity where I can learn and grow</p>
+      </div>
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/jacob-searcy" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a id="profile-link" href="https://github.com/jdsearcy03" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://docs.google.com/document/d/11s__gk5yRiKui5gZwAZj_AmB3QXU0Muu1u6y-tOcaNo/edit?usp=sharing" target="_blank" class="btn contact-details"><i class="fas fa-file-alt"></i> Resume</a>
+        <a href="mailto:jdsearcy03@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> jdsearcy03@gmail.com</a>
+        <a href="tel:828-458-9892" class="btn contact-details"><i class="fas fa-mobile-alt"></i> (828) 458-9892</a>
+      </div>
+    </section>
   </body>
 </html>
